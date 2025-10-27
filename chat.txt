@@ -1,0 +1,20 @@
+Se pide realizar un proyecto con la arquitectura de la primera versión de Artean. Esa versión es una arquitectura de php que hay una carpeta de app(con login,logout y signup), un assets con el css y js, un persistence con la conf y el DAO, un templates con la parte de código que vamos a tener que duplicar en todas las paginas de la app, un utils con la parte de codigo de SessionHelper.php y con un index.php
+
+Donde vamos a manejar una BBDD con los equipos de una competición y los partidos entre ellos.
+
+La página de entrada mostrará un menu con 2 opciones: Equipos y Partidos
+Equipos: La página de Equipos va a mostrar la información de los diferentes equipos que participan en la competicíon. Los equipos tendrán un nombre y un estadio donde juegan.
+Va a tener un formulario para agregrar un nuevo equipo con su estadio.
+Cuando pinchamos en un equipo concreto, va a otra pagina PartidosEquipo, que nos muestre los partidos y resultados de ese equipo.
+Partidos: La página de Partidos va a mostrar los resultados de los partidos entre los equipos en una jornada determinada. Jornada será un combo con las diferentes jornadas (1,2,..,N, Sin manejar fechas). Por lo tanto una jornada representa los partidos que se han jugado entre los equipos. Siendo el resultado tipo quiniela (1x2). Ademas incluyo el estadio en que se juega el partido.
+Va a tener un formulario donde podamos introducir un partido nuevo, siempre que los equipos no hayan jugado previamente. Se tiene que validar que el nuevo partido.
+Vamos a utilizar el concepto de sesión siguiendo la siguiente lópica.
+Si el usuario no tiene sesión la página principal es la de equipos.
+Si el usuario ha consultado los partuidos de algún equipo en concreto, su pagina principal son los partidos de ese equipo.
+Este proyecto tendrá definido una capa de Persistencia, donde están los DAO y todo lo necesario para montar la BBDD (Script SQL) y poder utilizarla.
+
+LO IMPORTANTE DE ESTE PROYECTO NO ES LA INTERFAZ SINO TODO EL CÓDIGO QUE HAY DETRAS DE ACCESO A LOS DATOS DESDE LA VISTA HASTA LA BBDD Y VICEVERSA
+
+El entregable es un acceso a un repositorio GITHUB. Quiero ver trabajo, ni un único commit y eso se valorará.
+
+Recordar que también penalizaré si no se cumplen las reglas de desarrollo.
