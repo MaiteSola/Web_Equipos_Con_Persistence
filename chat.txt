@@ -18,3 +18,5 @@ LO IMPORTANTE DE ESTE PROYECTO NO ES LA INTERFAZ SINO TODO EL CÓDIGO QUE HAY DE
 El entregable es un acceso a un repositorio GITHUB. Quiero ver trabajo, ni un único commit y eso se valorará.
 
 Recordar que también penalizaré si no se cumplen las reglas de desarrollo.
+
+align-items-center
