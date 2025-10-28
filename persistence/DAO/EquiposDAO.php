@@ -82,7 +82,7 @@ public function eliminarEnCascadaPorId($id) {
         // 1. Borrar partidos del equipo
         $stmt = $this->conn->prepare("
             DELETE FROM partidos 
-            WHERE equipo_local_id = ? OR equipo_visitante_id = ?
+            WHERE equipo1_id = ? OR equipo2_id = ?
         ");
         if (!$stmt) throw new Exception("Error prepare partidos: " . $this->conn->error);
         $stmt->bind_param("ii", $id, $id);
