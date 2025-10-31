@@ -4,6 +4,13 @@
 
 ---
 
+## Clonar el repositorio
+
+Para comenzar a trabajar en el proyecto, clona el repositorio desde GitHub: git clone https://github.com/MaiteSola/Web_Equipos_Con_Persistence.git
+
+Una vez clonado, entra en la carpeta del proyecto:
+cd Equipos_Persistence
+
 ## Requisitos del sistema
 
 Para desarrollar y ejecutar el proyecto, necesitas:
@@ -93,12 +100,14 @@ Equipos_Persistence/
 
 1. Abre el archivo: persistence/conf/credentials.json
 2. Modifica los siguientes campos con tus datos:
+```html
    {
   "host": "localhost",
   "user": "root",
   "password": "",
   "database": "equipos_persistence"
 }
+```
 
 ## Cómo ejecutar el proyecto
 
